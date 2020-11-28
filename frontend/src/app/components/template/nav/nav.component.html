@@ -1,5 +1,5 @@
 <mat-sidenav-container class="container">
-    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64" fixedBottomGap="64">
         <mat-nav-list class="nav-list">
             <a mat-list-item routerLink="/home.html">
                 <i class="material-icons">
@@ -13,4 +13,7 @@
             </a>
         </mat-nav-list>
     </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <app-home></app-home>
+    </mat-sidenav-content>
 </mat-sidenav-container>
