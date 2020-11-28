@@ -1,0 +1,17 @@
+.sidenav {
+    font-size: 18px;
+    background-color: #3f51b5;
+    width: 200px;
+}
+
+.sidenav :hover {
+    color: green;
+}
+
+.sidenav a {
+    color: #fff;
+}
+
+.sidenav i {
+    padding-right: 1em;
+}
