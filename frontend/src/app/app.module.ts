@@ -28,6 +28,7 @@ import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from  '@angular/common';
 import { HomeComponent } from './components/views/home/home.component';
 import { ProductCrudComponent } from './components/views/product-crud/product-crud.component';
+import { RedDirective } from './directives/red.directive';
 
 registerLocaleData(localePt);
 
@@ -39,6 +40,7 @@ registerLocaleData(localePt);
     NavComponent,
     HomeComponent,
     ProductCrudComponent,
+    RedDirective
     //ProductCreateComponent,
     //ProductReadComponent,
     //ProductRead2Component,

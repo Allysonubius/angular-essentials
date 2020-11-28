@@ -5,6 +5,10 @@
     justify-content: center;
 }
 
+.title-name {
+    font-family: 'Goldman', cursive;
+}
+
 .footer>span {
     font-size: 1.1em;
     font-weight: 300;
