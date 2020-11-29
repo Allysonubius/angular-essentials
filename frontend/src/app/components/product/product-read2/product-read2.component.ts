@@ -1,45 +1,15 @@
+
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
-import { ProductRead2DataSource, ProductRead2Item } from './product-read2-datasource';
+import { ProductRead2DataSource } from './product-read2-datasource';
+import { Product } from '../product.models';
 
 @Component({
   selector: 'app-product-read2',
-  template: `
-    <div class="mat-elevation-z8">
-      <table mat-table class="full-width-table" matSort aria-label="Elements">
-        <!-- Id Column -->
-        <ng-container matColumnDef="id">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
-          <td mat-cell *matCellDef="let row">{{row.id}}</td>
-        </ng-container>
-    
-        <!-- Name Column -->
-        <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
-          <td mat-cell *matCellDef="let row">{{row.name}}</td>
-        </ng-container>
-    
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-      </table>
-    
-      <mat-paginator #paginator
-          [length]="dataSource?.data.length"
-          [pageIndex]="0"
-          [pageSize]="50"
-          [pageSizeOptions]="[25, 50, 100]">
-      </mat-paginator>
-    </div>
-    
-  `,
-  styles: [`
-    .full-width-table {
-      width: 100%;
-    }
-    
-  `]
+  templateUrl: './product-read2.component.html',
+  styleUrls: ['./product-read2.component.css']
 })
 export class ProductRead2Component implements AfterViewInit, OnInit {
   @ViewChild(MatPaginator)
@@ -47,11 +17,11 @@ export class ProductRead2Component implements AfterViewInit, OnInit {
   @ViewChild(MatSort)
   sort!: MatSort;
   @ViewChild(MatTable)
-  table!: MatTable<ProductRead2Item>;
+  table!: MatTable<Product>;
   dataSource!: ProductRead2DataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  displayedColumns = ['id', 'name', 'price'];
 
   ngOnInit() {
     this.dataSource = new ProductRead2DataSource();

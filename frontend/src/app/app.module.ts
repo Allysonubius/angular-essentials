@@ -32,11 +32,13 @@ import { RedDirective } from './directives/red.directive';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
 import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 registerLocaleData(localePt);
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     HeaderComponent,
     FooterComponent,
@@ -72,6 +74,7 @@ registerLocaleData(localePt);
     MatPaginatorModule,
     MatSortModule,
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [{
     provide: LOCALE_ID,
     useValue: 'pt-BR'
