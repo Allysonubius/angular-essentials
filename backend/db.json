@@ -1,18 +1,29 @@
 {
-    "products": [{
-            "id": 1,
-            "name": "Caneta BIC PRETA",
-            "price": 5.89
-        },
-        {
-            "id": 2,
-            "name": "Notebook MAC",
-            "price": 12000.89
-        },
-        {
-            "id": 3,
-            "name": "Sansung 520",
-            "price": 3000
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC PRETA",
+      "price": 5.89
+    },
+    {
+      "id": 2,
+      "name": "Notebook MAC",
+      "price": 12000.89
+    },
+    {
+      "id": 3,
+      "name": "Sansung 520",
+      "price": 3000
+    },
+    {
+      "name": "",
+      "price": 0,
+      "id": 4
+    },
+    {
+      "name": "Allyson de oliveira brandao",
+      "price": "150,00",
+      "id": 5
+    }
+  ]
 }
