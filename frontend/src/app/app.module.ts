@@ -30,6 +30,7 @@ import { HomeComponent } from './components/views/home/home.component';
 import { ProductCrudComponent } from './components/views/product-crud/product-crud.component';
 import { RedDirective } from './directives/red.directive';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
 
 registerLocaleData(localePt);
 
@@ -43,6 +44,7 @@ registerLocaleData(localePt);
     ProductCrudComponent,
     RedDirective,
     ProductCreateComponent,
+    ProductReadComponent,
     //ProductReadComponent,
     //ProductRead2Component,
     //RedDirective,
