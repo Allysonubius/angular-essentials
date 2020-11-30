@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div>
 <!--Apresentation-->
 <h2 style="text-align:center;">
@@ -58,5 +59,4 @@
         </a>
     </div>
 </div>
-
 
