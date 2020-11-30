@@ -6,7 +6,7 @@
 
 > Mantido pela gigante da tecnologia Google, o Angular 9 é um dos principais frameworks frontend do mercado !
 
-Projeto desenvolvido diretamente pelo curso com a [COD3B](http://http://https://www.cod3r.com.br/courses/angular-9-essencial "COD3B") .
+Projeto desenvolvido diretamente pelo curso com a [COD3B](https://www.cod3r.com.br/courses/angular-9-essencial "COD3B") .
 
 #####  Instale a aplicação front e back com o comando :
 
