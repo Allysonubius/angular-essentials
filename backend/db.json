@@ -1,19 +1,29 @@
 {
   "products": [
     {
-      "id": 2,
-      "name": "Caneta BIC Vermelha",
+      "id": 1,
+      "name": "\tCaneta BIC Vermelha",
       "price": "2.50"
     },
     {
-      "id": 3,
-      "name": "\tCaneta BIC Verde",
-      "price": "2.50"
+      "name": "\tCaneta BIC Vermelha",
+      "price": "2.50",
+      "id": 2
     },
     {
-      "name": "Caneta BIC Azul",
+      "name": "\tCaneta BIC Vermelha",
+      "price": "2.50",
+      "id": 3
+    },
+    {
+      "name": "\tCaneta BIC Vermelha",
       "price": "2.50",
       "id": 4
+    },
+    {
+      "name": "teste",
+      "price": 0,
+      "id": 5
     }
   ]
 }
